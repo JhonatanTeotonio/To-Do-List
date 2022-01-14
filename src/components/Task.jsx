@@ -7,7 +7,6 @@ import './Task.css'
 //o handleTaskClick tá com uma arrow function pq senão ele faz a ação antes do click
 const Task = ({task, handleTaskClick, handleTaskDeletion}) => {
     const history = useHistory();
-    console.log(history)
 
     const handleTaskDetailsClick = () => {
         history.push(`/${task.title}`);
